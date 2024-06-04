@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+
+  height: 100dvh;
+  width: 100dvw;
+}

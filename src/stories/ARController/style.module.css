@@ -1,0 +1,15 @@
+.arController {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-g1);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 24px;
+
+  padding: 16px 0 32px 0;
+}

@@ -1,0 +1,27 @@
+.mainView__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainView__headerContainer {
+  flex: 0;
+}
+
+.mainView__arButtonContainer {
+  flex: 0;
+  padding: 16px 0 32px 0;
+}
+
+.mainView__fileSelectContainer {
+  flex: 1;
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}

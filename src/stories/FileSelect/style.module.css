@@ -1,0 +1,46 @@
+.FileSelect__container {
+  width: 330px;
+  height: 330px;
+
+  background-color: var(--color-w1);
+  border: 20px solid var(--color-y1);
+  border-radius: 32px;
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.FileSelect__description {
+  color: var(--color-b1);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  user-select: none;
+}
+
+.FileSelect__input {
+  display: none;
+}
+
+.FileSelect__previewContainer {
+  width: 280px;
+  height: 280px;
+}
+
+.FileSelect__preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.FileSelect__note {
+  width: 310px;
+  font-size: 1rem;
+  padding: 16px 0;
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}

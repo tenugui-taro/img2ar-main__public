@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  padding: var(--padding-2) var(--padding-1);
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-w1);
+}

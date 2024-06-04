@@ -1,0 +1,15 @@
+.overlay {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: var(--color-g1);
+  color: var(--color-w1);
+
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.overlay__icon {
+  color: var(--color-w1);
+  font-size: 48px;
+}

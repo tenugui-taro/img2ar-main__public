@@ -1,0 +1,42 @@
+name: Lint and Test
+
+# 全てのブランチが対象
+# プルリクエストが作成された時にも実行
+# コミットがプッシュされた時にも実行
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Node.jsの準備
+      - uses: actions/checkout@v3
+      - name: Use Node.js v20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+      # インストール
+      - run: npm ci
+      # type-check
+      - run: npm run type-check
+      # リント
+      - run: npm run lint
+      # Prettier
+      - run: npm run format
+      # TypeScriptのコンパイル
+      - run: npm run build

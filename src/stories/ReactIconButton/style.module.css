@@ -1,0 +1,12 @@
+.ReactIconButton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-r1);
+  border: none;
+  color: var(--color-w1);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
